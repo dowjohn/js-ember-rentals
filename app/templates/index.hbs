@@ -2,6 +2,12 @@
 
 We hope you find what you are looking for right meow.
 <br>
+
+<ul>
+    {{#each model as |rental|}}
+        <li>{{rental.owner}}'s {{rental.type}} in {{rental.city}}</li>
+    {{/each}}
+</ul>
 {{#link-to 'about'}}Learn about us{{/link-to}}
 <br>
 {{#link-to 'contact'}}Contact info here{{/link-to}}
