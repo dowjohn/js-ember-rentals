@@ -5,9 +5,11 @@ We hope you find what you are looking for right meow.
 
 <ul>
     {{#each model as |rental|}}
-        {{rental-tile rental=rental}}
+        {{rental-tile rental=rental destroyRental="destroyRental"}}
     {{/each}}
 </ul>
+
+{{new-rental save2="save3"}}
 
 {{#link-to 'about'}}Learn about us{{/link-to}}
 <br>
